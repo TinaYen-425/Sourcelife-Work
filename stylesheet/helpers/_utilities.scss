@@ -546,10 +546,12 @@ $utilities: map-merge(
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
+      responsive: true,
       property: background-color,
       class: bg,
       local-vars: (
-        "bg-opacity": 1
+        "bg-opacity": 1,
+        lg: 1
       ),
       values: map-merge(
         $utilities-bg-colors,

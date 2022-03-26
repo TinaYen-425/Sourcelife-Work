@@ -1,3 +1,14 @@
-.bg-brown{
+
+  .bg-lg-brown{
     background-color: #A0967E;
 }
+
+@include media-breakpoint-down(lg) {
+    .bg-light{
+        background-color: $light ;
+    }
+}
+
+
+
+  
