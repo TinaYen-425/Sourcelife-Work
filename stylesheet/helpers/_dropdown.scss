@@ -133,12 +133,13 @@
 .dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: 0 0 0 40px;
+  padding: 0 0 0 50px;
   clear: both;
   font-weight: $font-weight-normal;
   font-size: $font-size-lg;
   color:  $light;
-  background-color: $primary;
+  background-color: #7CD0C9;//$primary
+  background-image: linear-gradient(135deg,rgba(124,208,201,0),rgba(29,200,185,0.9));
   text-align: inherit; // For `<button>`s
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap; // prevent links from randomly breaking onto new lines

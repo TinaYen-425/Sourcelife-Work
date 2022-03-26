@@ -4521,12 +4521,13 @@ fieldset:disabled .btn {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 50px;
   clear: both;
   font-weight: 400;
   font-size: 1.25rem;
   color: #f8f9fa;
-  background-color: #1dc8b9;
+  background-color: #7CD0C9;
+  background-image: linear-gradient(135deg, rgba(124, 208, 201, 0), rgba(29, 200, 185, 0.9));
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
