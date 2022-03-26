@@ -1,0 +1,21 @@
+.collapse-custom{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    z-index: 1000;
+    min-width: $dropdown-min-width;
+    padding: 0;
+    margin: 0; // Override default margin of ul
+    @include font-size($dropdown-font-size);
+    color: $dropdown-color;
+    text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+    list-style: none;
+    background-color: $dropdown-bg;
+    background-clip: padding-box;
+    border-left: $dropdown-border-width solid $dropdown-border-color;
+    border-right: $dropdown-border-width solid $dropdown-border-color;
+    border-bottom: $dropdown-border-width solid $dropdown-border-color;;
+    @include border-radius($dropdown-border-radius);
+    @include box-shadow($dropdown-box-shadow);
+  
+}

@@ -1,0 +1,22 @@
+.link-light{
+    color: $light !important;
+    &:hover{
+        color: $secondary !important;
+    }
+    &.active{
+        color: $secondary !important;
+    }
+}
+
+@include media-breakpoint-down(lg) { //行動版
+    .link-light{
+        &:hover{
+            color: $light !important;
+            background: $secondary !important;
+        }
+        &.active{
+            color: $light !important;
+            background: $secondary !important;
+        }
+    }
+ }
