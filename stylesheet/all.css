@@ -4402,7 +4402,7 @@ fieldset:disabled .btn {
 }
 
 .dropdown-menu[data-bs-popper] {
-  top: 140%;
+  top: 152%;
   left: 0;
 }
 
@@ -7883,6 +7883,10 @@ fieldset:disabled .btn {
 
 .fs-6 {
   font-size: 1rem !important;
+}
+
+.fs-7 {
+  font-size: 0.875rem !important;
 }
 
 .fst-italic {
@@ -14082,26 +14086,6 @@ fieldset:disabled .btn {
     color: #f8f9fa !important;
     background: #212529 !important;
   }
-}
-
-.collapse-custom {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  z-index: 1000;
-  min-width: 10rem;
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
-  border-right: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
 }
 
 .fw-500 {
