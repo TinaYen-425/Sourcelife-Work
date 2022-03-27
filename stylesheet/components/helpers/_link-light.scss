@@ -1,7 +1,7 @@
 .link-light{
     color: $light !important;
     &:hover{
-        color: $secondary !important;
+        color: $dark !important;
     }
     &.active{
         color: $secondary !important;
@@ -12,11 +12,11 @@
     .link-light{
         &:hover{
             color: $light !important;
-            background: $secondary !important;
+            background: $dark !important;
         }
         &.active{
             color: $light !important;
-            background: $secondary !important;
+            background: $dark !important;
         }
     }
  }
