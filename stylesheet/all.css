@@ -14091,4 +14091,9 @@ fieldset:disabled .btn {
 .fw-500 {
   font-weight: 500;
 }
+
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=all.css.map */
