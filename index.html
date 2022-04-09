@@ -6,36 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet/all.css">
+    <!-- Bs5 Icon -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <title>生寶國際生技</title>
 </head>
+<style>
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+</style>
 
 <body>
     <header class="">
         <ul
             class="d-lg-flex justify-content-lg-end bg-light px-2 mb-0 d-none d-lg-block">
-            <li class="mx-2"><a href="#"><i`
-                        class="bi bi-chat-dots fs-5 text-dark"></i></a></li>
+            <li class="mx-2"><a href="#">
+                    <i` class="bi bi-chat-dots fs-5 text-dark"></i>
+                </a></li>
             <li class="mx-2"><a href="#"><i
                         class="bi bi-envelope fs-5 text-dark"></i></a></li>
-            <li class="mx-2"><a href="#"><i           
+            <li class="mx-2"><a href="#"><i
                         class="bi bi-facebook fs-5 text-dark"></i></a></li>
             <li class="mx-2"><a href="#"><i
                         class="bi bi-line fs-5 text-dark"></i></a></li>
         </ul>
         <div class="bg-white">
-            <div class="container-fluid container-lg">
-                <div class="row row-cols-3 align-items-center justify-content-between py-2 py-lg-0">
+            <div class="container">
+                <div
+                    class="row row-cols-3 align-items-center justify-content-between py-2 py-lg-0">
                     <div class="col"></div>
                     <div class="col text-center">
                         <a href="./index.html">
                             <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/eb93e88b79381f3de5c9d5027fe8c4f4.png"
-                            alt="logo" style="width: 200px; height: 80px; object-fit: cover;">
+                                class="img-fluid" alt="logo">
                         </a>
                     </div>
                     <div class="col">
-                        <ul class="d-flex justify-content-end align-items-center mb-0">
+                        <ul
+                            class="d-flex justify-content-end align-items-center mb-0">
                             <li class="mx-2">
                                 <a href="#"
                                     class="d-block link-primary position-relative d-flex align-items-center">
@@ -53,141 +73,171 @@
                                 <a href="#"
                                     class="link-primary d-flex align-items-center">
                                     <i class="bi bi-person-circle fs-3"></i>
-                                    <p class="mb-0 ms-2 text-nowrap d-none d-md-block">會員登入</p>
+                                    <p
+                                        class="mb-0 ms-2 text-nowrap d-none d-md-block">
+                                        會員登入</p>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-    
-            <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
-                <div class="container-fluid d-flex flex-lg-row-reverse flex-row flex-nowrap">
+
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
+                <div
+                    class="container-fluid d-flex flex-lg-row-reverse flex-row flex-nowrap">
                     <button class="navbar-toggler me-4" type="button"
                         data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasExample"
                         aria-controls="offcanvasExample">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-    
+
                     <div class="input-group w-100 w-lg-30">
-                        <input class="form-control" type="search" placeholder="關鍵字" aria-label="Search">
-                        <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+                        <input class="form-control" type="search"
+                            placeholder="關鍵字" aria-label="Search">
+                        <button class="btn btn-dark" type="submit"><i
+                                class="bi bi-search"></i></button>
                     </div>
-    
-                    <div class="offcanvas offcanvas-start bg-primary bg-gradient w-lg-100" tabindex="-1"
-                    id="offcanvasExample" data-bs-scroll="true"
-                    aria-labelledby="offcanvasExampleLabel" style="width: 280px;">
-                    <ul
-                        class="d-flex justify-content-lg-evenly flex-column flex-lg-row align-items-lg-center mb-0  px-0 py-lg-2">
-                        <li class="d-block d-lg-none">
-                            <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0 active" href="#">
-                                <i class="bi bi-bag-heart-fill me-1"></i>
-                                <p class="mb-0 me-0 me-lg-2 d-inline">訂單查詢</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
-                                id="dropdownLink" data-bs-toggle="dropdown"
-                                href="#" aria-expanded="true">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <i class="bi bi-lightbulb-fill me-1 d-inline-block d-lg-none"></i>
-                                        <p class="mb-0 me-0 me-lg-2 d-inline">生寶沿革</p>
+
+                    <div class="offcanvas offcanvas-start bg-primary bg-gradient w-lg-100"
+                        tabindex="-1" id="offcanvasExample"
+                        data-bs-scroll="true"
+                        aria-labelledby="offcanvasExampleLabel"
+                        style="width: 280px;">
+                        <ul
+                            class="d-flex justify-content-lg-evenly flex-column flex-lg-row align-items-lg-center mb-0  px-0 py-lg-2">
+                            <li class="d-block d-lg-none">
+                                <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0 active"
+                                    href="#">
+                                    <i class="bi bi-bag-heart-fill me-1"></i>
+                                    <p class="mb-0 me-0 me-lg-2 d-inline">訂單查詢
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
+                                    id="dropdownLink" data-bs-toggle="dropdown"
+                                    href="#" aria-expanded="true">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <i
+                                                class="bi bi-lightbulb-fill me-1 d-inline-block d-lg-none"></i>
+                                            <p
+                                                class="mb-0 me-0 me-lg-2 d-inline">
+                                                生寶沿革</p>
+                                        </div>
+                                        <i class="bi bi-caret-down-fill"></i>
                                     </div>
-                                    <i class="bi bi-caret-down-fill"></i>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">關於我們</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
-                                        href="#">最新消息</a></li>
-                            </ul>
-        
-                        </li>
-                        <li class="dropdown">
-                            <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
-                                id="dropdownLink" data-bs-toggle="dropdown"
-                                href="#">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <i class="bi bi-clipboard2-data-fill me-1 d-inline-block d-lg-none"></i>
-                                        <p class="mb-0 me-0 me-lg-2 d-inline">產品系列</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">關於我們</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
+                                            href="#">最新消息</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
+                                    id="dropdownLink" data-bs-toggle="dropdown"
+                                    href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <i
+                                                class="bi bi-clipboard2-data-fill me-1 d-inline-block d-lg-none"></i>
+                                            <p
+                                                class="mb-0 me-0 me-lg-2 d-inline">
+                                                產品系列</p>
+                                        </div>
+                                        <i class="bi bi-caret-down-fill"></i>
                                     </div>
-                                    <i class="bi bi-caret-down-fill"></i>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">腸道保健</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">護眼配方</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
-                                        href="#">養身保健</a></li>
-                            </ul>
-        
-                        </li>
-                        <li class="dropdown">
-                            <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
-                                id="dropdownLink" data-bs-toggle="dropdown"
-                                href="#">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <i class="bi bi-easel-fill me-1 d-inline-block d-lg-none"></i>
-                                        <p class="mb-0 me-0 me-lg-2 d-inline">主題專欄</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">腸道保健</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">護眼配方</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
+                                            href="#">養身保健</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
+                                    id="dropdownLink" data-bs-toggle="dropdown"
+                                    href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <i
+                                                class="bi bi-easel-fill me-1 d-inline-block d-lg-none"></i>
+                                            <p
+                                                class="mb-0 me-0 me-lg-2 d-inline">
+                                                主題專欄</p>
+                                        </div>
+                                        <i class="bi bi-caret-down-fill"></i>
                                     </div>
-                                    <i class="bi bi-caret-down-fill"></i>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">健康新知</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">名人推薦</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
-                                        href="#">社會關懷</a></li>
-                            </ul>
-                        </li>
-                        <li class="">
-                            <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0" href="#">
-                                <i class="bi bi-broadcast me-1 d-inline-block d-lg-none"></i>
-                                <p class="mb-0 me-0 me-lg-2 d-inline">節目廣播</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
-                                id="dropdownLink" data-bs-toggle="dropdown"
-                                href="#">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <i class="bi bi-question-circle-fill me-1 d-inline-block d-lg-none"></i>
-                                        <p class="mb-0 me-0 me-lg-2 d-inline">購物需知</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">健康新知</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">名人推薦</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
+                                            href="#">社會關懷</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
+                                    href="#">
+                                    <i
+                                        class="bi bi-broadcast me-1 d-inline-block d-lg-none"></i>
+                                    <p class="mb-0 me-0 me-lg-2 d-inline">節目廣播
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="fs-5 link-light w-100 d-block fw-bold px-5 py-3 p-lg-0"
+                                    id="dropdownLink" data-bs-toggle="dropdown"
+                                    href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <i
+                                                class="bi bi-question-circle-fill me-1 d-inline-block d-lg-none"></i>
+                                            <p
+                                                class="mb-0 me-0 me-lg-2 d-inline">
+                                                購物需知</p>
+                                        </div>
+                                        <i class="bi bi-caret-down-fill"></i>
                                     </div>
-                                    <i class="bi bi-caret-down-fill"></i>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">常見問題</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
-                                        href="#">聯絡我們</a></li>
-                                <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
-                                        href="#">訪客留言板</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul
-                    class="d-flex justify-content-evenly bg-dark p-2 mb-0 d-block d-lg-none mt-auto">
-                    <li class="mx-2"><a href="#"><i`
-                                class="bi bi-chat-dots fs-5 text-light"></i></a></li>
-                    <li class="mx-2"><a href="#"><i
-                                class="bi bi-envelope fs-5 text-light"></i></a></li>
-                    <li class="mx-2"><a href="#"><i           
-                                class="bi bi-facebook fs-5 text-light"></i></a></li>
-                    <li class="mx-2"><a href="#"><i
-                                class="bi bi-line fs-5 text-light"></i></a></li>
-                </ul>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">常見問題</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3"
+                                            href="#">聯絡我們</a></li>
+                                    <li><a class="dropdown-item py-3 py-lg-2 px-lg-3 rounded-bottom-lg"
+                                            href="#">訪客留言板</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul
+                            class="d-flex justify-content-evenly bg-dark p-2 mb-0 d-block d-lg-none mt-auto">
+                            <li class="mx-2"><a href="#">
+                                    <i` class="bi bi-chat-dots fs-5 text-light">
+                                        </i>
+                                </a></li>
+                            <li class="mx-2"><a href="#"><i
+                                        class="bi bi-envelope fs-5 text-light"></i></a>
+                            </li>
+                            <li class="mx-2"><a href="#"><i
+                                        class="bi bi-facebook fs-5 text-light"></i></a>
+                            </li>
+                            <li class="mx-2"><a href="#"><i
+                                        class="bi bi-line fs-5 text-light"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -195,49 +245,63 @@
     </header>
 
     <section class="d-none d-md-block">
-        <div id="carouselCard" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div id="carouselCard" class="carousel slide carousel-dark"
+            data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselCard"
+                    data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCard"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCard"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                  <a href="#">
-                    <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/Header/Banner/header-banner-01_1.jpg" class="d-block w-100" alt="拒絕朦朧美">
-                  </a>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                  <a href="#">
-                    <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/Header/Banner/header-banner-02_1.jpg" class="d-block w-100" alt="專利活益菌">
-                  </a>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                  <a href="#">
-                    <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/Header/Banner/6c88f19a75ac54e49811afc11522ede7.jpg" class="d-block w-100" alt="黃金元素">
-                  </a>
-              </div>
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <a href="#">
+                        <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/Header/Banner/header-banner-01_1.jpg"
+                            class="d-block w-100" alt="拒絕朦朧美">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <a href="#">
+                        <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/Header/Banner/header-banner-02_1.jpg"
+                            class="d-block w-100" alt="專利活益菌">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <a href="#">
+                        <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/data/Header/Banner/6c88f19a75ac54e49811afc11522ede7.jpg"
+                            class="d-block w-100" alt="黃金元素">
+                    </a>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselCard" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCard" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselCard" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </section>
 
     <section class="bg-light pt-8 pt-lg-12">
-        <div class="container mb-20">
+        <div class="container pb-lg-20 pb-10">
             <h2 class="fs-3 text-center fw-bold font-second">品牌消息</h2>
             <div class="text-center text-primary mb-5 mb-lg-9">News</div>
             <div class="font-second">
-                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 justify-content-between gy-4">
+                <div
+                    class="row row-cols-lg-4 row-cols-md-2 row-cols-1 justify-content-between gy-4">
                     <div class="col">
                         <div class="card border-0 bg-transparent">
-                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20210522_001119.jpg" alt="" class="img-fluid mb-4 h-100">
+                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20210522_001119.jpg"
+                                alt="" class="img-fluid mb-4 h-100">
                             <p class="text-muted mb-1">2022/3/27</p>
                             <p class="mb-0 fw-500">防疫措施要落實，全民防疫一起來</p>
                             <a class="stretched-link" href="#"></a>
@@ -245,7 +309,8 @@
                     </div>
                     <div class="col">
                         <div class="card border-0 bg-transparent">
-                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20200329_00.jpg" alt="" class="img-fluid mb-4 h-100">
+                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20200329_00.jpg"
+                                alt="" class="img-fluid mb-4 h-100">
                             <p class="text-muted mb-1">2022/6/2</p>
                             <p class="mb-0 fw-500">因應新型冠狀病毒疫情說明-雙宿雙飛遊日本專案</p>
                             <a class="stretched-link" href="#"></a>
@@ -253,52 +318,22 @@
                     </div>
                     <div class="col">
                         <div class="card border-0 bg-transparent">
-                            <img src="https://image-cdn-flare.qdm.cloud/q573047178b3ba/image/cache/data/product_layout/about__2-max-w-4096.jpg" alt="" class="img-fluid mb-4" style="height:146px;">
+                            <img src="https://image-cdn-flare.qdm.cloud/q573047178b3ba/image/cache/data/product_layout/about__2-max-w-4096.jpg"
+                                alt="" class="img-fluid mb-4"
+                                style="height:146px;">
                             <p class="text-muted mb-1">2022/6/2</p>
-                            <p class="mb-0 overflow-hidden fw-500">台灣創意茶品牌，結合在地文化及獨特的設計巧思，帶您體驗不同的品茶思維。
+                            <p class="mb-0 overflow-hidden fw-500">
+                                台灣創意茶品牌，結合在地文化及獨特的設計巧思，帶您體驗不同的品茶思維。
                             </p>
                             <a class="stretched-link" href="#"></a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0 bg-transparent">
-                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20210522_001119.jpg" alt="" class="img-fluid mb-4 h-100">
+                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20210522_001119.jpg"
+                                alt="" class="img-fluid mb-4 h-100">
                             <p class="text-muted mb-1">2022/3/27</p>
                             <p class="mb-0 fw-500">防疫措施要落實，全民防疫一起來</p>
-                            <a class="stretched-link" href="#"></a>
-                        </div>
-                    </div>
-                    <div class="col d-none d-md-block">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20200329_00.jpg" alt="" class="img-fluid mb-4 h-100">
-                            <p class="text-muted mb-1">2022/6/2</p>
-                            <p class="mb-0 fw-500">因應新型冠狀病毒疫情說明-雙宿雙飛遊日本專案</p>
-                            <a class="stretched-link" href="#"></a>
-                        </div>
-                    </div>
-                    <div class="col d-none d-md-block">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://image-cdn-flare.qdm.cloud/q573047178b3ba/image/cache/data/product_layout/about__2-max-w-4096.jpg" alt="" class="img-fluid mb-4" style="height:146px;">
-                            <p class="text-muted mb-1">2022/6/2</p>
-                            <p class="mb-0 overflow-hidden fw-500">台灣創意茶品牌，結合在地文化及獨特的設計巧思，帶您體驗不同的品茶思維。
-                            </p>
-                            <a class="stretched-link" href="#"></a>
-                        </div>
-                    </div>
-                    <div class="col d-none d-md-block">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://www.mitsubishi-motors.com.tw/cmcpublished/news/20210522_001119.jpg" alt="" class="img-fluid mb-4 h-100">
-                            <p class="text-muted mb-1">2022/3/27</p>
-                            <p class="mb-0 fw-500">防疫措施要落實，全民防疫一起來</p>
-                            <a class="stretched-link" href="#"></a>
-                        </div>
-                    </div>
-                    <div class="col d-none d-md-block">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://image-cdn-flare.qdm.cloud/q573047178b3ba/image/cache/data/product_layout/about__2-max-w-4096.jpg" alt="" class="img-fluid mb-4" style="height:146px;">
-                            <p class="text-muted mb-1">2022/6/2</p>
-                            <p class="mb-0 overflow-hidden fw-500">台灣創意茶品牌，結合在地文化及獨特的設計巧思，帶您體驗不同的品茶思維。
-                            </p>
                             <a class="stretched-link" href="#"></a>
                         </div>
                     </div>
@@ -306,67 +341,285 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="pb-lg-20 pb-10">
             <h2 class="fs-3 text-center fw-bold font-second">心得分享</h2>
-            <div class="text-center text-primary mb-5 mb-lg-9">Hear People say</div>
-            <div class="fond-second">
-                <div class="row flex-wrap">
-                    <div class="col-6">
-                        <div class="card shadow-lg bg-light-blue border-0">
-                            <img src="https://images.unsplash.com/photo-1517135399940-2855f5be7c4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdCUyMGhlYWx0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid object-fit-cover rounded-top" alt="" style="height:350px">
+            <div class="text-center text-primary mb-5 mb-lg-9">Hear People say
+            </div>
+            <div class="fond-second flex-wrap container-fluid px-3">
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-6 col-md-5">
+                        <div class="card shadow-lg bg-light-blue border-0 bg-cover"
+                            style="background-image: url(https://images.unsplash.com/photo-1517135399940-2855f5be7c4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdCUyMGhlYWx0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60); height: 350px ;">
                             <div class="card-img-overlay">
-                                <div class="card-title p-5 text-end display-5 fw-bold text-muted">專業營養師<br>真實體驗</div>
+                                <div
+                                    class="card-title p-5 text-end display-5 fw-bold text-muted">
+                                    專業營養師<br>真實體驗</div>
                             </div>
-                            <a class="stretched-link text-center fs-4 bg-primary link-dark p-2 opacity-75 rounded-bottom" href="#">產品名稱XX</a>
+                        </div>
+                        <a class="text-center fs-4 bg-primary link-dark p-2 opacity-75 rounded-bottom d-block w-100 "
+                            href="#">產品名稱XX</a>
+                    </div>
+                    <div class="col-lg-6 col-md-7">
+                        <div class="card shadow-lg bg-light-blue border-0">
+                            <div class="row gx-0">
+                                <div class="col-md-6 pt-3 pt-lg-5 px-lg-5 px-2">
+                                    <div
+                                        class="card-title h5 text-center fw-bold mb-4 mt-6 mt-lg-0">
+                                        營養師大解密一生俊 <br>一個月大解密</div>
+                                    <p class="mb-5 fs-6">
+                                        沒有親身體驗，怎麼可以推薦給我的粉絲呢！所以就吃了一個月的克菲爾益生菌，克菲爾菌真的幫助我調整消化道，讓排便更順暢！<span
+                                            class="d-md-none d-lg-block">
+                                            排便時間變得十分固定，急跑廁所的次數降低，排便形狀改善，而且是大家夢寐以求健康的~金黃色便便.</span>
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"
+                                            class="btn btn-primary btn-sm px-5 d-flex link-light">
+                                            <p class="mb-0 me-1">看更多</p>
+                                            <i
+                                                class="bi bi-arrow-right-circle-fill"></i>
+                                        </a>
+                                    </div>
+                                    <p class="mb-0 text-muted fs-7 pt-4">
+                                        *此藥效為網有實際案例，效果因人而異</p>
+                                </div>
+                                <div class="col-md-6  bg-cover"
+                                    style="background-image: url(https://images.unsplash.com/photo-1517135399940-2855f5be7c4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdCUyMGhlYWx0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60); height: 350px;">
+                                </div>
+                                <a class="text-center fs-4 bg-primary link-dark p-2 opacity-75 rounded-bottom"
+                                    href="#">Tina 營養師</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card shadow-lg bg-light-blue border-0">
-                            <img src="https://images.unsplash.com/photo-1517135399940-2855f5be7c4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdCUyMGhlYWx0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid object-fit-cover rounded-top" alt="" style="height:350px">
-                            <div class="card-img-overlay">
-                                <div class="card-title p-5 text-end display-5 fw-bold text-muted">專業營養師<br>真實體驗</div>
-                            </div>
-                            <a class="stretched-link text-center fs-4 bg-primary link-dark p-2 opacity-75 rounded-bottom" href="#">Tina 營養師</a>
+                    <div class="col-lg-3 col-md-6 position-relative">
+                        <div class="bg-cover"
+                            style="background-image: url(https://image-cdn-flare.qdm.cloud/q596ffec2e1c73/image/data/index/e299e3b3a3c23352241a01d4cce06191_1.png); height: 258px">
                         </div>
+                        <a class="text-center fs-4 bg-light-brown link-dark rounded-bottom d-block w-100 stretched-link"
+                            href="#">Tina 營養師
+                        </a>
+                        <p class="mb-0 text-muted fs-7 text-center text-nowrap">
+                            此案例為網友分享，實際效果因人而異</p>
                     </div>
-                    <div class="col">
-                        <div class="card"></div>
+                    <div class="col-lg-3 col-md-6 position-relative">
+                        <div class="bg-cover"
+                            style="background-image: url(https://image-cdn-flare.qdm.cloud/q596ffec2e1c73/image/data/index/b1a2aaa969355c2d249d9517e6b815e5.png); height: 258px">
+                        </div>
+                        <a class="text-center fs-4 bg-light-brown link-dark rounded-bottom d-block w-100 stretched-link"
+                            href="#">Tina 營養師
+                        </a>
+                        <p class="mb-0 text-muted fs-7 text-center text-nowrap">
+                            此案例為網友分享，實際效果因人而異</p>
                     </div>
-                    <div class="col">
-                        <div class="card"></div>
+                    <div class="col-lg-3 col-md-6 position-relative">
+                        <div class="bg-cover"
+                            style="background-image: url(https://image-cdn-flare.qdm.cloud/q596ffec2e1c73/image/data/index/e299e3b3a3c23352241a01d4cce06191_1.png); height: 258px">
+                        </div>
+                        <a class="text-center fs-4 bg-light-brown link-dark rounded-bottom d-block w-100 stretched-link"
+                            href="#">Tina 營養師
+                        </a>
+                        <p class="mb-0 text-muted fs-7 text-center text-nowrap">
+                            此案例為網友分享，實際效果因人而異</p>
                     </div>
-                    <div class="col">
-                        <div class="card"></div>
-                    </div>
-                    <div class="col">
-                        <div class="card"></div>
+                    <div class="col-lg-3 col-md-6 position-relative">
+                        <div class="bg-cover"
+                            style="background-image: url(https://image-cdn-flare.qdm.cloud/q596ffec2e1c73/image/data/index/b1a2aaa969355c2d249d9517e6b815e5.png); height: 258px">
+                        </div>
+                        <a class="text-center fs-4 bg-light-brown link-dark rounded-bottom d-block w-100 stretched-link"
+                            href="#">Tina 營養師
+                        </a>
+                        <p class="mb-0 text-muted fs-7 text-center text-nowrap">
+                            此案例為網友分享，實際效果因人而異</p>
                     </div>
                 </div>
             </div>
         </div>
-     
+
+        <div class="pb-lg-20 pb-10">
+            <h2 class="fs-3 text-center fw-bold font-second">最新商品</h2>
+            <div class="text-center text-primary mb-5 mb-lg-6">New Arrival</div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-11 d-none d-md-block gx-0">
+                        <div class="swiper-container swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://img.shoplineapp.com/media/image_clips/623962448055d40026dff253/original.jpg?1647927876"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/cache/data/product/E885B8E98193E4BF9DE581A5/LP11020300E/-1_1-cr-250x250.png"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body flex-grow-0">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/cache/data/product/E885B8E98193E4BF9DE581A5/LP11020600E/-1_1-cr-250x250.png"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body flex-grow-0">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/cache/data/product/E885B8E98193E4BF9DE581A5/LP110201200E/-1_1-cr-250x250.png"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body flex-grow-0">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://image-cdn-flare.qdm.cloud/q63e6d19fc5286/image/cache/data/product/E885B8E98193E4BF9DE581A5/LCR20E9809FE7BA96E88F8C/-1_1-cr-250x250.png"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body flex-grow-0">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://img.shoplineapp.com/media/image_clips/6136353832cd3b003ea29b5e/original.jpg?1630942519"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body flex-grow-0">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column h-100">
+                                        <a href="#">
+                                            <img src="https://img.shoplineapp.com/media/image_clips/623962448055d40026dff253/original.jpg?1647927876"
+                                                class="card-img-top" alt="">
+                                            <div class="card-body flex-grow-0">
+                                                <div class="text-dark font-second">
+                                                    【LP110特益菌】300E 加強配方</div>
+                                                <div class="text-light-brown fs-7">
+                                                    NT$3,380</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
 
     </section>
 
+
     <footer class="bg-light-blue border-top border-3 border-light-sky-blue">
-       <div class="container py-8"> 
-           <div class="row justify-content-lg-center text-center text-lg-start">
-               <div class="col-lg-4">
-                <h3 class="display-6 font-second mb-4 text-primary fw-bold" style="letter-spacing: 3px;"><a href="#">生寶國際生技</a></h3>
-                <img src="./image/聲寶.png"  class="img-fluid rounded" alt="經銷售權">
-               </div>
-               <div class="col-lg-8">
-                其他內容
-               </div>
-           </div>
-       </div>
-       <p class="mb-0 py-3 bg-dark text-light text-center fs-7">Copyright ©2022 生寶國際生技</p>
+        <div class="container py-8">
+            <div
+                class="row justify-content-lg-center text-center text-lg-start">
+                <div class="col-lg-4">
+                    <h3 class="display-6 font-second mb-4 text-primary fw-bold"
+                        style="letter-spacing: 3px;"><a href="#">生寶國際生技</a></h3>
+                    <img src="./image/聲寶.png" class="img-fluid rounded"
+                        alt="經銷售權">
+                </div>
+                <div class="col-lg-8">
+                    其他內容
+                </div>
+            </div>
+        </div>
+        <p class="mb-0 py-3 bg-dark text-light text-center fs-7">Copyright ©2022
+            生寶國際生技</p>
     </footer>
+
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+
+    <!-- swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // let appendNumber = 3;
+        // let prependNumber = 1;
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4, //3.2
+            centeredSlides: true,
+            spaceBetween: 10,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+
+            // virtual: {
+            //   slides: (function () {
+            //     const slides = [];
+            //     for (var i = 0; i < 4; i += 1) {
+            //       slides.push('Slide ' + (i + 1));
+            //     }
+            //     return slides;
+            //   })(),
+            // },
+        });
+    </script>
+
+
+
 </body>
 
 </html>
